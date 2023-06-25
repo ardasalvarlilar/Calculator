@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+body .calculate {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  border-radius: 10px;
+}
+body .calculate .calculate-input {
+  font-size: 30px;
+  width: 100%;
+  height: 30px;
+  text-align: end;
+  padding: 30px;
+}
+body .calculate .calculate-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+body .calculate .calculate-item .button, body .calculate .calculate-item .decimal, body .calculate .calculate-item .operator, body .calculate .calculate-item .clear, body .calculate .calculate-item .delete {
+  padding: 40px;
+  font-size: 25px;
+}
+body .calculate .calculate-item .equal {
+  grid-area: 2/4/5;
+}/*# sourceMappingURL=style.css.map */
