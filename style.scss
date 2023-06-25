@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+
+  .calculate{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    border-radius: 10px;
+
+    .calculate-input{
+      font-size: 30px;
+      width: 100%;
+      height: 30px;
+      text-align: end;
+      padding: 30px;
+    }
+    .calculate-item{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+
+
+      .button,.decimal,.operator,.clear,.delete{
+        padding: 40px;
+        font-size: 25px;
+      }
+      .equal{
+        grid-area: 2/4/5;
+      }
+      
+    }
+  }
+}
